@@ -25,9 +25,10 @@ local Services = setmetatable({}, {
 })
 
 --// Files module
-local Files = (function()
-	--INSERT: @lib/Files.lua
-end)()
+-- local Files = (function()
+-- 	--INSERT: @lib/Files.lua
+-- end)()
+local Files = loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/Sigma-Spy/refs/heads/main/src/lib/Files.lua"))()
 Files:PushConfig(Configuration)
 Files:Init({
 	Services = Services
